@@ -13,5 +13,8 @@ dependencies = [
     "vollmer-hrv @ git+https://github.com/dokyuhan/vollmer-hrv.git",
 ]
 
-[tool.setuptools.packages.find]
-where = ["src"]
+[tool.setuptools]
+packages = ["heartbrain_zarr"]
+
+[tool.setuptools.package-dir]
+heartbrain_zarr = "src"
