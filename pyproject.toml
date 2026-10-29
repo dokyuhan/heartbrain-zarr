@@ -3,14 +3,14 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "eegecg-zarr"          # PLACEHOLDER name (to be renamed by the owner: folder, this field, and the import name in src/)
-version = "0.1.0"
+name = "heartbrain-zarr"
+version = "1.0.0"
 description = "Windowed EEG Welch PSD + ECG HRV measures written to per-subject Zarr stores; dataset-agnostic (study parameters are passed in)"
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
     "numpy", "scipy", "zarr>=3",
-    "vollmer-hrv @ git+https://github.com/<user>/vollmer-hrv.git",   # replace <user>; for local development: pip install -e ../vollmer_hrv first
+    "vollmer-hrv @ git+https://github.com/dokyuhan/vollmer-hrv.git",
 ]
 
 [tool.setuptools.packages.find]
